@@ -1,5 +1,5 @@
 <mat-drawer-container class="example-container h-full">
-    <mat-drawer #drawer mode="side" [(opened)]="show" class="!bg-blue-500 w-64">
+    <mat-drawer #drawer mode="side" [(opened)]="show" class="!bg-blue-200 w-64">
         <div class="p-4 flex flex-col h-full">
             <button mat-icon-button class="hover:bg-red-500" (click)="handleShow()">
                 <mat-icon class="m-auto">close</mat-icon>
@@ -8,32 +8,32 @@
             <ul class="space-y-3 mt-4">
                 <li>
                     <a href="" routerLink="/"
-                        class="text-white block px-2 py-2 rounded hover:bg-blue-200 hover:text-black text-center">
+                        class="text-black block px-2 py-2 rounded hover:bg-white hover:text-black text-center">
                         Home
                     </a>
                 </li>
                 <li>
                     <a href="" routerLink="/books"
-                        class="text-white block px-2 py-2 rounded hover:bg-blue-200 hover:text-black text-center">
+                        class="text-black block px-2 py-2 rounded hover:bg-white hover:text-black text-center">
                         All Books
                     </a>
                 </li>
                 <li *ngIf="member">
                     <a href="" routerLink="/borrowed"
-                        class="text-white block px-2 py-2 rounded hover:bg-blue-200 hover:text-black text-center">
+                        class="text-black block px-2 py-2 rounded hover:bg-white hover:text-black text-center">
                         Borrowed Books
                     </a>
                 </li>
                 <li *ngIf="member">
                     <a href="" routerLink="/reserved"
-                        class="text-white block px-2 py-2 rounded hover:bg-blue-200 hover:text-black text-center">
+                        class="text-black block px-2 py-2 rounded hover:bg-white hover:text-black text-center">
                         Reserved Books
                     </a>
                 </li>
 
                 <li *ngIf="member">
                     <a href="" routerLink="/history"
-                        class="text-white block px-2 py-2 rounded hover:bg-blue-200 hover:text-black text-center">
+                        class="text-black block px-2 py-2 rounded hover:bg-white hover:text-black text-center">
                         Transaction History
                     </a>
                 </li>

@@ -10,7 +10,7 @@
                     <mat-step [stepControl]="paymentForm">
                         <form [formGroup]="paymentForm" class="flex flex-col justify-center items-center">
                             <ng-template matStepLabel>What you Gain..!!</ng-template>
-                            <mat-accordion class="w-full">
+                            <mat-accordion class="w-full mt-4">
                                 <mat-expansion-panel>
                                     <mat-expansion-panel-header>
                                         <mat-panel-title> Borrowing Privileges </mat-panel-title>
@@ -56,7 +56,7 @@
                     <!-- Step 2: Make Payment -->
                     <mat-step [stepControl]="paymentForm" errorMessage="All fields are required.">
                         <ng-template matStepLabel>Make Payment</ng-template>
-                        <form [formGroup]="paymentForm" (ngSubmit)="submitPayment()" class="space-y-5">
+                        <form [formGroup]="paymentForm" (ngSubmit)="submitPayment()" class="space-y-5 mt-3">
                             <!-- Membership Type -->
                             <mat-form-field class="w-full">
                                 <mat-label>Membership Type</mat-label>

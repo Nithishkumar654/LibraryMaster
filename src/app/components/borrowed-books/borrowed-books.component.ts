@@ -89,7 +89,7 @@ export class BorrowedBooksComponent implements OnInit, AfterViewInit {
         this.isLoading = true;
 
         this._api.getBorrowedBooks().subscribe(
-            (books: { message: BorrowedBook[] }) => {
+            (books) => {
                 const borrowedBooks: BorrowedBook[] = books.message.map((element: BorrowedBook) => ({
                     bookId: element.bookId,
                     memberId: element.memberId,
